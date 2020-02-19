@@ -58,11 +58,11 @@ db:
 # advanced options than those provided below.
 
 ssl:
-  enabled: false
+  enabled: true
   port: 3443
 
   # Provider to use, possible values: custom, letsencrypt
-  provider: custom
+  provider: letsencrypt
 
   # ++++++ For custom only ++++++
   # Certificate format, either 'pem' or 'pfx':
@@ -79,8 +79,8 @@ ssl:
   dhparam: null
 
   # ++++++ For letsencrypt only ++++++
-  domain: wiki.yourdomain.com
-  subscriberEmail: admin@example.com
+  domain: wiki.bary.no
+  subscriberEmail: wiki@bary.no
 
 # ---------------------------------------------------------------------
 # Database Pool Options
